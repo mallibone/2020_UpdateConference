@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SignalR.Local.Mobile"
+             Title="Welcome"
+             x:Class="SignalR.Local.Mobile.Views.MainPage">
+    <StackLayout VerticalOptions="Center" Margin="16">
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" />
+        <Entry Placeholder="Username" Text="{Binding Username}" />
+        <Button Text="Generate Username" Command="{Binding ExecuteGenerateUsername}" />
+        <Button Text="Submit Username" Command="{Binding ExecuteUsername}" />
+    </StackLayout>
+
+</ContentPage>
